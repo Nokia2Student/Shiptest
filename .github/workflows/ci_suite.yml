@@ -26,18 +26,16 @@ jobs:
         run: exit 0
 
   run_linters:
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Run Linters
     needs: start_gate
     runs-on: ubuntu-22.04
     timeout-minutes: 20
 
     steps:
-      - name: Checkout Master
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: master
-      - uses: actions/checkout@v4
 
       - name: Restore SpacemanDMM cache
         id: cache-spacemandmm
@@ -130,7 +128,7 @@ jobs:
           ./DMCompiler_linux-x64/DMCompiler shiptest.dme --suppress-unimplemented --define=CIBUILDING | bash tools/ci/annotate_od.sh
 
   compile_all_maps:
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Compile Maps
     needs: start_gate
     runs-on: ubuntu-latest
@@ -155,7 +153,7 @@ jobs:
           tools/build/build --ci dm -DCIBUILDING -DCITESTING -DALL_MAPS -DFULL_INIT
 
   run_all_tests:
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Integration Tests
     needs: start_gate
     strategy:
@@ -187,7 +185,7 @@ jobs:
   #      minor: ${{ matrix.minor }}
 
   test_windows:
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
     name: Windows Build
     needs: start_gate
     runs-on: windows-latest
