@@ -124,10 +124,15 @@
 
 	slot_flags = ITEM_SLOT_BACK
 
-	valid_attachments = SOLAR_ATTACHMENTS
-	slot_available = SOLAR_ATTACH_SLOTS
 	//gauss doesn't explode so there's not light.
 	light_range = 0
+
+	valid_attachments = list(
+		/obj/item/attachment/laser_sight,
+		/obj/item/attachment/rail_light,
+		/obj/item/attachment/bayonet,
+		/obj/item/attachment/energy_bayonet
+	)
 
 
 /obj/item/gun/ballistic/automatic/powered/gauss/claris/suns
@@ -164,11 +169,15 @@
 
 	slot_flags = ITEM_SLOT_BACK
 
-	valid_attachments = SOLAR_ATTACHMENTS
-	slot_available = SOLAR_ATTACH_SLOTS
-
 	//gauss doesn't explode so there's not light.
 	light_range = 0
+
+	valid_attachments = list(
+		/obj/item/attachment/laser_sight,
+		/obj/item/attachment/rail_light,
+		/obj/item/attachment/bayonet,
+		/obj/item/attachment/energy_bayonet
+	)
 
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
