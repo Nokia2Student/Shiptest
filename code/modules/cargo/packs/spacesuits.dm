@@ -6,14 +6,13 @@
 		Spacesuits (two parts, helm and suit)
 */
 
-/datum/supply_pack/spacesuit_armor/spacesuit
+/datum/supply_pack/spacesuits/spacesuit
 	name = "Space Suit Crate"
-	desc = "Contains two basic space suits. Although the technology is centuries old, it should protect you from the vacuum of space."
-	cost = 500 //changed the suit type to be the one without pockets, making it more consistent with the rest of the EVA suits available
-	contains = list(/obj/item/clothing/suit/space/eva,
-					/obj/item/clothing/suit/space/eva,
-					/obj/item/clothing/head/helmet/space/eva,
-					/obj/item/clothing/head/helmet/space/eva)
+	desc = "Contains one basic space suit. Although the technology is centuries old, it should protect you from the vacuum of space."
+	cost = 500
+	contains = list(/obj/item/clothing/suit/space,
+					/obj/item/clothing/head/helmet/space)
+	crate_name = "space suit crate"
 
 /datum/supply_pack/spacesuits/pilot_spacesuit
 	name = "Pilot Space Suit Crate"

@@ -1224,6 +1224,7 @@
 	// [/CELADON-EDIT]
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
 
+//solarian
 /obj/item/clothing/head/helmet/space/hardsuit/solgov
 	name = "\improper SolGov hardsuit helmet"
 	desc = "An armored spaceproof helmet, its visor is reminiscent of knights of yore."
