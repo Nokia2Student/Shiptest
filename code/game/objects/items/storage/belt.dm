@@ -296,6 +296,7 @@
 		/obj/item/restraints/handcuffs,
 		/obj/item/assembly/flash/handheld,
 		/obj/item/clothing/glasses,
+		/obj/item/binoculars,
 		/obj/item/ammo_casing/shotgun,
 		/obj/item/ammo_box/magazine,
 		/obj/item/ammo_box/c38, //speed loaders don't have a common path like magazines. pain.
@@ -312,6 +313,8 @@
 		// /obj/item/melee/classic_baton/telescopic,
 		// [/CELADON-REMOVE]
 		/obj/item/radio,
+		/obj/item/attachment,
+		/obj/item/extinguisher/mini,
 		/obj/item/clothing/gloves,
 		/obj/item/restraints/legcuffs/bola,
 		/obj/item/holosign_creator/security,
