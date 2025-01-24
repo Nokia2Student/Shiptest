@@ -42,7 +42,7 @@ FLOOR SAFES
 	. = ..()
 
 	// Combination generation
-	if(tumblers.len < 1) // [CELADON-ADD] - Добавляем проверку наличия кодов, для возможности использования определённых кодов.
+	if(!tumblers.len)
 		for(var/i in 1 to number_of_tumblers)
 			tumblers.Add(rand(0, 99))
 
