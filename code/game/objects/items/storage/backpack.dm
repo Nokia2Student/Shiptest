@@ -670,7 +670,6 @@
 	STR.silent = TRUE
 
 /obj/item/storage/backpack/duffelbag/clown/syndie/PopulateContents()
-	new /obj/item/pda/clown(src)
 	new /obj/item/clothing/under/rank/civilian/clown(src)
 	// [CELADON-ADD] - CELADON_RETURN_CONTENT
 	new /obj/item/clothing/shoes/clown_shoes(src)
