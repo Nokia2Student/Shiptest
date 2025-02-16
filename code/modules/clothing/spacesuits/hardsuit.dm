@@ -1107,7 +1107,7 @@
 	item_state = "hardsuit-inteq"
 	hardsuit_type = "inteq"
 
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/independent/inteq
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/inteq
 	// [CELADON-EDIT] - TAJARA, CELADON_RIOL
 	// supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION // CELADON-EDIT - ORIGINAL
 	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION | TAJARA_VARIATION | RIOL_VARIATION

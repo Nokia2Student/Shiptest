@@ -114,7 +114,6 @@
 		"stamp-ne_captain" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_captain.png',
 		"stamp-ne_engdir" = 'mod_celadon/_storge_icons/icons/png/large_stamp-ne_eng_dir.png',
 		// [/CELADON-ADD]
-		"stamp-clown" = 'icons/stamp_icons/large_stamp-clown.png',
 		"stamp-deny" = 'icons/stamp_icons/large_stamp-deny.png',
 		"stamp-ok" = 'icons/stamp_icons/large_stamp-ok.png',
 		"stamp-void" = 'icons/stamp_icons/large_stamp-void.png',
